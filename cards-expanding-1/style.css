@@ -6,8 +6,14 @@
 
 :root {
   --text-main-color: white;
+  --font: "Bebas Neue", sans-serif;
+  --bg-primary-color: #e9dccd;
 }
 
+body {
+  font-family: var(--font);
+  background-color: var(--bg-primary-color);
+}
 .wrapper {
   height: 100vh;
   display: flex;
@@ -55,6 +61,12 @@
   opacity: 1;
 }
 
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+}
 /* Card Photos */
 
 .istanbul {
