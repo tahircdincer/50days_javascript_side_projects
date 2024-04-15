@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-main-color: white;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0px;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  gap: 1rem;
+}
+
+/* Panel - Card */
+/* Commenting for my own progress so i can keep track of what i do on the project. */
+/* Setting flex 0.5 so they are even. When card is about to expand flex value will increase so it can expand properly. */
+/* Position setting relative so ' h3 's can be ' absolute ' */
+.panel {
+  height: 80vh;
+  border-radius: 40px;
+  color: var(--text-main-color);
+  cursor: pointer;
+  flex: 0.5;
+  text-align: center;
+  position: relative;
+  transition: flex 0.8s ease-in;
+}
+/* Setting opacity to 0, because when active class called it' ll show up until then h3 will not show up. */
+.panel h3 {
+  font-size: 1.8rem;
+  position: absolute;
+  left: 1.6rem;
+  bottom: 1.8rem;
+  margin: 0px;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h3 {
+  opacity: 1;
+}
+
+/* Card Photos */
+
+.istanbul {
+  background: url(./images/pexels-photo-19564577.jpg) center center/cover
+    no-repeat;
+}
+
+.rome {
+  background: url(./images/pexels-ilia-bronskiy-20888056.jpg) center
+    center/cover no-repeat;
+}
+
+.porto {
+  background: url(./images/pexels-magda-ehlers-2549572.jpg) center center/cover
+    no-repeat;
+}
+
+.vienna {
+  background: url(./images/pexels-anton-uniqueton-3823093.jpg) center
+    center/cover no-repeat;
+}
