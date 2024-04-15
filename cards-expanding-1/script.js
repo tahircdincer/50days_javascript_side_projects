@@ -24,4 +24,4 @@ function removeActiveClass() {
 
 /* Adding ' removeActiveClass() ' function before adding ' active ' class simply removing all the other ' active ' classes so there won' t be 3- 4 active classes at the same time in the script. */
 
-// ' () is optional for the variable of forEach. It can be just panel. '
+// ' () is optional for the parameter of forEach. It can be just panel. '
