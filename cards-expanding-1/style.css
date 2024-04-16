@@ -57,8 +57,10 @@ body {
 .panel.active {
   flex: 5;
 }
+/* Adding transition on opacity because text shows up before expanding event on the card.*/
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.4s ease-in 0.8s;
 }
 
 /* Responsive Design */
