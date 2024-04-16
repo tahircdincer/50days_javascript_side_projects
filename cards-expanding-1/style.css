@@ -60,7 +60,7 @@ body {
 /* Adding transition on opacity because text shows up before expanding event on the card.*/
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.4s ease-in 0.8s;
+  transition: opacity 0.4s ease-in 0.6s;
 }
 
 /* Responsive Design */
